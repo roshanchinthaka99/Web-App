@@ -5,7 +5,8 @@ FROM php:8.1-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Copy all project files into Apache web root
-COPY . /var/www/html/
+COPY public/ /var/www/html/
+
 
 # Expose Render’s port
 EXPOSE 10000
