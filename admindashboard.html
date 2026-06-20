@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; URL=admindashboard.php" />
+    <title>Redirecting to Admin Dashboard</title>
+</head>
+<body>
+    <div class="title">
+    <h2>Admin Dashboard</h2>
+    </div>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Doctors</h3>
+            <p>Total: <?php echo $doctorCount; ?></p>
+        </div>
+        <div class="card">
+            <h3>Patients</h3>
+            <p>Total: <?php echo $patientCount; ?></p>
+        </div>
+        <div class="card">
+            <h3>Appointments</h3>
+            <p>Total: <?php echo $appointmentCount; ?></p>
+        </div>
+        <div class="card">
+            <h3>Staff</h3>
+            <p>Total: <?php echo $staffCount; ?></p>
+        </div>
+    </div>
+
+    <div class="btn-container">
+    <div class="btn">
+        <a href="addpatients.php">   
+            <button>Add Patients</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="Add Doctors\adddoctors.html">   
+            <button>Add Doctors</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="addstaff.php">   
+            <button>Add Staff</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="adminselectdocs.php">   
+            <button>Manange Doctors</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="adminselectpatients.php">    
+            <button>Manage Patients</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="adminselectstaffs.php">    
+            <button>Manage Staff</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="manageappointment.php">    
+            <button>Manage Appointments</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="adminservices.php">    
+            <button>Services</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="#">    
+            <button>View Feedback</button>
+        </a>
+    </div>
+    <div class="btn">
+        <a href="adminlogin.php">    
+            <button>Logout</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
